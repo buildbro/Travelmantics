@@ -36,6 +36,7 @@ public class DealActivity extends AppCompatActivity {
     ImageView dealImageView;
     Button imageBtn;
     TravelDeal deal;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,6 +91,7 @@ public class DealActivity extends AppCompatActivity {
         }
     }
 
+    //deletes deal and image for the deal
     private void deleteDeal() {
         if (deal == null) {
             Toast.makeText(this, "Please save the deal before deleting", Toast.LENGTH_SHORT).show();
